@@ -1,7 +1,12 @@
 .holder {
-  display: grid;                   /* Set the display to grid */
-  grid-template-columns: repeat(2, 1fr);  /* Create 2 equal columns */
-  grid-template-rows: repeat(2, 1fr);    /* Create 2 equal rows */
-  width: 200px;                    /* Set the total width of the grid */
-  height: 200px;                   /* Set the total height of the grid */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Horizontal alignment */
+  align-items: center;    /* Vertical alignment */
+  width: 300px;          /* Set an initial width */
+}
+
+.holder > * {
+  width: 100px;           /* Width of each item/block */
+  height: 100px;          /* Height of each item/block */
 }
